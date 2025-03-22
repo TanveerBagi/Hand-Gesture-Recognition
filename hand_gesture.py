@@ -64,9 +64,6 @@ with mp_hands.Hands(
             if thumb_extended and index_extended and middle_extended and ring_extended and pinky_extended:
                 return "Hello"
 
-            if thumb_extended and index_not_extended and middle_not_extended and ring_not_extended and pinky_not_extended:
-                return "Goodbye"
-
             if thumb_not_extended and index_not_extended and middle_not_extended and ring_not_extended and pinky_not_extended:
                 return "Yes"
 
@@ -95,12 +92,12 @@ with mp_hands.Hands(
             cv2.putText(image, f'Hand {idx + 1}: {gesture}', (10, 30 + (idx * 30)),
                     cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2, cv2.LINE_AA)
 
-        mp_drawing.draw_landmarks(
-            image,
-            hand_landmarks,
-            mp_hands.HAND_CONNECTIONS,
-            mp_drawing_styles.get_default_hand_landmarks_style(),
-            mp_drawing_styles.get_default_hand_connections_style())
+            mp_drawing.draw_landmarks(
+                image,
+                hand_landmarks,
+                mp_hands.HAND_CONNECTIONS,
+                mp_drawing_styles.get_default_hand_landmarks_style(),
+                mp_drawing_styles.get_default_hand_connections_style())
     
     cv2.imshow('Hand Gesture Recognition Project', image)
 
