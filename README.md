@@ -1,4 +1,4 @@
-Hand Gesture Recognition using OpenCV & MediaPipe 🖐️
+**Hand Gesture Recognition using OpenCV & MediaPipe 🖐️**
 This is a real-time hand gesture recognition system that detects and classifies various hand gestures using OpenCV and MediaPipe. The system recognizes gestures like Hello, Goodbye, Peace, Thumbs Up, and more using a webcam.
 
 The system is designed to recognize gestures like Hello, Goodbye, Peace, Thumbs Up, Yes, No, and more, making it a perfect starting point for interactive human-computer interfaces. The gestures are classified based on the positions of the hand landmarks, such as the thumb, index, middle, ring, and pinky fingers.
